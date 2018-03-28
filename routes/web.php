@@ -13,7 +13,7 @@
 
 Route::group(['middleware' => 'web'], function () {
     Route::get('login', 'LoginController@index')->name('login');
-    Route::get('regist', 'RegistController@index')->name('regist');
+    Route::get('regist', 'RegistController@index')->name('register');
 
     Route::group(['namespace' => 'Web'], function () { 
         Route::get('/', 'HomeController@index');        
