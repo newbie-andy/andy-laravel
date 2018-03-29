@@ -10,6 +10,6 @@ class BaseController extends Controller
     //
     public function __construct()
     {
-        //控制器初始化的内容
+
     }
 }

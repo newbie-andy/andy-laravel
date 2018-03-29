@@ -12,8 +12,8 @@
 */
 
 Route::group(['middleware' => 'web'], function () {
-    Route::get('login', 'LoginController@index')->name('login');
-    Route::get('regist', 'RegistController@index')->name('register');
+    //用户登录、注册、修改等操作，在原来的基础上进行改动的
+    Route::auth();
 
     Route::group(['namespace' => 'Web'], function () { 
         Route::get('/', 'HomeController@index');        
