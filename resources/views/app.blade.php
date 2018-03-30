@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>andy</title>
     <link rel="stylesheet" href="{{asset('./mdl/material.min.css')}}">
     <link rel="stylesheet" href="{{asset('./mdl/material-icon.css')}}">
     <link rel="stylesheet" href="{{asset('./css/common.css')}}">
     <script src="{{asset('./mdl/material.min.js')}}"></script>
+    <script src="{{asset('./js/jquery.min.js')}}"></script>
 </head>
 <body>
     <div class="wrap">
@@ -57,5 +59,7 @@
             @yield('content')
         </div>
     </div>
+    <script src="{{asset('./js/common.js')}}"></script>
+    @yield('pageScript')
 </body>
 </html>

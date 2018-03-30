@@ -18,7 +18,7 @@ Route::group(['middleware' => 'web'], function () {
     Route::group(['namespace' => 'Web'], function () { 
         Route::get('/', 'HomeController@index');        
         Route::group(['middleware' => 'auth'], function () {
-            Route::get('/home','HomeController@index')->name('home');    
+            Route::get('/','HomeController@index');    
             Route::get('/userid/{id}', 'HomeController@index');
 
         });

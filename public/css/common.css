@@ -1,3 +1,8 @@
+
+/* reset */
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+    background-color: #ffffff;
+}
 .aligin-items {
     display: flex;
     justify-content: center;
@@ -6,13 +11,14 @@
 }
 .full-width {
     width: 300px;
+    box-sizing: border-box;
 }
 .form {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.auth-box {
+.auth-box form {
     display: flex;
     flex-direction: column;
     justify-content: center;
