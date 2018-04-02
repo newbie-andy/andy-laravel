@@ -1,27 +1,13 @@
-.aligin-items {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #fafafa;
+.userbox {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    overflow: hidden;
 }
-.full-width {
-    width: 300px;
+.userbox>img {
+    display: inline-block;
+    height: 100%;
 }
-.form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.auth-box {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 25%;
-    min-width: 400px;
-    max-width: 500px;
-    padding: 40px 0;
-    border-radius: 10px;
-    box-shadow: 0 0px 8px 0 rgba(7,17,27,.06), 0 1px 12px 3px rgba(7,17,27,.04); 
-    background: #ffffff;
-}
+/* 
+
+*/
