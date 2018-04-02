@@ -25,7 +25,8 @@
                 <!-- Navigation. We hide it in small screens. -->
                 <nav class="mdl-navigation mdl-layout--large-screen-only">
                     <a class="mdl-navigation__link" href="/square">广场</a>
-                    <a class="mdl-navigation__link" href="/topics">话题</a>
+                    <a class="mdl-navigation__link" href="/topics">赏金问答</a>
+                    <a class="mdl-navigation__link" href="/topics">积分当铺</a>
                     @if (Route::has('login'))
                         @auth
                             <a class="mdl-navigation__link" href="/dynamics">动态</a>
@@ -47,7 +48,8 @@
                 <span class="mdl-layout-title">Andy Diary</span>
                 <nav class="mdl-navigation">
                     <a class="mdl-navigation__link" href="">广场</a>
-                    <a class="mdl-navigation__link" href="">话题</a>
+                    <a class="mdl-navigation__link" href="">赏金问答</a>
+                    <a class="mdl-navigation__link" href="/topics">积分当铺</a>
                     @if (Route::has('login'))
                         @auth
                             <a class="mdl-navigation__link" href="/dynamics">动态</a>
