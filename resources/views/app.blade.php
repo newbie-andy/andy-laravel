@@ -24,14 +24,14 @@
                 <div class="mdl-layout-spacer"`></div>
                 <!-- Navigation. We hide it in small screens. -->
                 <nav class="mdl-navigation mdl-layout--large-screen-only">
-                    <a class="mdl-navigation__link" href="">广场</a>
-                    <a class="mdl-navigation__link" href="">话题</a>
+                    <a class="mdl-navigation__link" href="/square">广场</a>
+                    <a class="mdl-navigation__link" href="/topics">话题</a>
                     @if (Route::has('login'))
                         @auth
-                            <a class="mdl-navigation__link" href="">动态</a>
-                            <a class="mdl-navigation__link" href="">收藏</a>
-                            <a class="mdl-navigation__link" href="">发布新文章</a>
-                            <a class="mdl-navigation__link" href="">设置</a>
+                            <a class="mdl-navigation__link" href="/dynamics">动态</a>
+                            <a class="mdl-navigation__link" href="/collections">收藏</a>
+                            <a class="mdl-navigation__link" href="/publish">发布新文章</a>
+                            <a class="mdl-navigation__link" href="/settings">设置</a>
                             <div class="userbox">
                                 <img src="{{ asset('./images/singledog.jpg') }}"/>
                             </div>
@@ -50,10 +50,10 @@
                     <a class="mdl-navigation__link" href="">话题</a>
                     @if (Route::has('login'))
                         @auth
-                            <a class="mdl-navigation__link" href="">动态</a>
-                            <a class="mdl-navigation__link" href="">收藏</a>
-                            <a class="mdl-navigation__link" href="">发布新文章</a>
-                            <a class="mdl-navigation__link" href="">设置</a>
+                            <a class="mdl-navigation__link" href="/dynamics">动态</a>
+                            <a class="mdl-navigation__link" href="/collections">收藏</a>
+                            <a class="mdl-navigation__link" href="/publish">发布新文章</a>
+                            <a class="mdl-navigation__link" href="/settings">设置</a>
                         @else
                             <a class="mdl-navigation__link" href="{{ route('login') }}">Login</a>
                             <a class="mdl-navigation__link" href="{{ route('register') }}">Register</a>

@@ -1,6 +1,7 @@
 @extends('./app')
 
 @section('content')
+<link rel="stylesheet" href="{{asset('./css/auth.css')}}">
 <main class="mdl-layout__content aligin-items">
     <div class="page-content">
         <div class="form">

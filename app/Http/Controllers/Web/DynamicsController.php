@@ -8,4 +8,8 @@ use App\Http\Controllers\Controller;
 class DynamicsController extends Controller
 {
     //
+    public function index() {
+        return view('web.dynamics.index');
+    }
+
 }
