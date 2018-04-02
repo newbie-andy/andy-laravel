@@ -25,12 +25,16 @@
                 <!-- Navigation. We hide it in small screens. -->
                 <nav class="mdl-navigation mdl-layout--large-screen-only">
                     <a class="mdl-navigation__link" href="">广场</a>
-                    <a class="mdl-navigation__link" href="">分类</a>
+                    <a class="mdl-navigation__link" href="">话题</a>
                     @if (Route::has('login'))
                         @auth
+                            <a class="mdl-navigation__link" href="">动态</a>
                             <a class="mdl-navigation__link" href="">收藏</a>
                             <a class="mdl-navigation__link" href="">发布新文章</a>
                             <a class="mdl-navigation__link" href="">设置</a>
+                            <div class="userbox">
+                                <img src="{{ asset('./images/singledog.jpg') }}"/>
+                            </div>
                         @else
                             <a class="mdl-navigation__link" href="{{ route('login') }}">Login</a>
                             <a class="mdl-navigation__link" href="{{ route('register') }}">Register</a>
@@ -43,9 +47,10 @@
                 <span class="mdl-layout-title">Andy Diary</span>
                 <nav class="mdl-navigation">
                     <a class="mdl-navigation__link" href="">广场</a>
-                    <a class="mdl-navigation__link" href="">分类</a>
+                    <a class="mdl-navigation__link" href="">话题</a>
                     @if (Route::has('login'))
                         @auth
+                            <a class="mdl-navigation__link" href="">动态</a>
                             <a class="mdl-navigation__link" href="">收藏</a>
                             <a class="mdl-navigation__link" href="">发布新文章</a>
                             <a class="mdl-navigation__link" href="">设置</a>

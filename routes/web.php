@@ -20,7 +20,13 @@ Route::group(['middleware' => 'web'], function () {
         Route::group(['middleware' => 'auth'], function () {
             Route::get('/','HomeController@index');    
             Route::get('/userid/{id}', 'HomeController@index');
-
+            Route::get('/square', 'SquareController@index');
+            Route::get('/topics', 'TopicsController@index');
+            Route::get('/dynamics', 'DynamicsController@index');
+            Route::get('/collections', 'CollectionsController@index');
+            Route::get('/publish', 'PublishController@index');
+            Route::get('/settings', 'SettingsController@index');
+            Route::get('/userinfo', 'UserInfoController@index');
         });
     });
 
