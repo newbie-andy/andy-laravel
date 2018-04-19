@@ -10,10 +10,11 @@ class HomeController extends CommonController
 {
     //
     public function index()  {
-        return view('app');
+        // return view('app');
+        return redirect('/square');
     }
 
-    public function login()  {
-        return view('welcome');
-    }
+    // public function login()  {
+    //     return view('welcome');
+    // }
 }
