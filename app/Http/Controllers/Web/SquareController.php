@@ -9,7 +9,7 @@ class SquareController extends CommonController
 {
     //
     public function index() {
-        $articles = Articles::with('user:id,name')->where('is_public', 1)->paginate(15);
+        $articles = Articles::with('user:id,name,avatar')->where('is_public', 1)->paginate(15);
         return view('web.square.index',['articles' => $articles]);
     }
 

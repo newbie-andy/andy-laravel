@@ -5,6 +5,7 @@
     <div class="page-content">
         <ul class="mdl-list mdl-shadow--2dp square-box">
             @foreach($articles as $key => $value) 
+            {{ $value }}
                 <li class="mdl-list__item square-li">
                     <header>
                         <div class="user-box mdl-shadow--2dp">

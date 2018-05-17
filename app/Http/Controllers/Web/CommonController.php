@@ -8,5 +8,5 @@ use App\Http\Controllers\Common\BaseController;
 
 class CommonController extends BaseController
 {
-    //
+    
 }

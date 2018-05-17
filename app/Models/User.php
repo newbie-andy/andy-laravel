@@ -15,7 +15,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'name', 'avatar', 'email', 'password',
     ];
 
     /**
@@ -34,6 +34,12 @@ class User extends Authenticatable
     public function article() {
         return $this->hasMany('App\Models\Article');
     }
+
+    //这里我们可以改变根据那个用户的属性条件来获取用户的信息
+    // public function getRouteKeyName()
+    // {
+    //     return 'name';
+    // }
 
 
 }

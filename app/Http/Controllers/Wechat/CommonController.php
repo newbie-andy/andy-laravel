@@ -25,4 +25,8 @@ class CommonController extends Controller
             return false;
         }
     }
+
+    public function show() {
+        echo "api是可以通的";
+    }
 }

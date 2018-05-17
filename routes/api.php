@@ -13,13 +13,12 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
+Route::group(['namespace' => 'Wechat'], function () {
+    Route::get('/show', 'CommonController@show');  
 });
 
-Route::group(['middleware' => 'auth:api'], function () {
-    Route::group(['namespace' => 'Wechat','prefix' => 'api'], function () {
-        Route::get('/checkSignature', 'CommonController@checkSignature');  
-    });
-});
+//隐式的模型注入方式
+// Route::get('/user/{user}', function(App\Models\User $user) {
+//     dd($user);
+// });  
 
