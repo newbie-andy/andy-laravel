@@ -9,4 +9,10 @@ use App\Http\Controllers\Admin\CommonController;
 class HomeController extends CommonController
 {
     //
+    public function index() {
+        return ['code'=>1, 'message'=> 'there no body'];
+    }
+
+    //
+    public function 
 }

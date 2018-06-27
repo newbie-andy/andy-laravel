@@ -7,7 +7,7 @@ use Illuminate\Foundation\Http\Kernel as HttpKernel;
 class Kernel extends HttpKernel
 {
     /**
-     * 全局中间件
+     * 全局中间件,在每一个http请求中都会被调用的
      * The application's global HTTP middleware stack.
      *
      * These middleware are run during every request to your application.
@@ -20,6 +20,7 @@ class Kernel extends HttpKernel
         \App\Http\Middleware\TrimStrings::class,
         \Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull::class,
         \App\Http\Middleware\TrustProxies::class,
+        \App\Http\Middleware\TestStudy::class,//此处使我们自定义的中间件
     ];
 
     /**
